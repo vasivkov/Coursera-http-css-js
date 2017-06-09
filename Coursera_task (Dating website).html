@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wedding service</title>
+	<style type="text/css">
+		fieldset {
+			border: solid 10px yellow;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+<form action="destination" method="Post">
+<fieldset >
+	<legend>Your Face</legend>
+	<label for="face">Your Image </label>
+	<input type="file" name="file" id="face" value="choose file"><br/>
+	<p>Image preview :</p>
+</fieldset> <br/>
+<fieldset >
+	<legend>Your General Details</legend>
+	<label for="name">Name: </label> 
+	<input type="text" id="name" name="name" value="your full name" required><br/>
+	<label for="sex">Gender: </label> 
+	<input type="radio" id="sex" name="Gender" value="Male"> Male
+	<input type="radio" id="sex" name="Gender" value="Female"> Female<br/>
+	<label for="age">Age: </label>
+	<input type="number" id="age" name="age" min="16" max="90" required><br/>
+	<label for="birthday">Date of birth: </label>
+	<input type="date" id="birthday" name="birthday" ><br/>
+	<label for="color">Favorite color: </label> 
+	<input type="color" id="color" name="color"><br/>
+	<label for="country">Which country: </label> 
+	<select id="country" name="country">
+		<option value="rf">Russia</option>
+		<option value="usa">USA</option>
+		<option value="en">England</option>
+		<option value="fl">Finland</option>
+		<option value="gr">Germany</option>
+		<option value="en">England</option>
+		<option value="empty">no selection</option>
+	</select>
+
+</fieldset> <br/>
+<fieldset >
+	<legend>Your Indicators</legend>
+	<label for="height">Height: </label>
+	Short <input type="range" min="0" max="100" step="5" value="50" id="height" name="height"> Tall<br/>
+	<label for="salary">Salary: </label>
+	Poor<input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary"> Rich
+</fieldset> <br/>
+<fieldset >
+	<legend>Your Contact Information</legend>
+	Email:
+	<input type="email" name="Email" required> <br/>
+	Mobile:
+	<input type="tel" name="Mobile"> <br/>
+	<label for="address"> Address</label> 
+	<textarea id="address" name="address" rows="5" cols="70" ></textarea> <br/>
+	
+	<label for="contact">Method to contact you: </label>
+	<input type="checkbox" id="contact" name="contact" value="1"> Email 
+	<input type="checkbox" id="contact" name="contact" value="2"> WhatsApp
+	<input type="checkbox" id="contact" name="contact" value="3"> ln-app chat
+</fieldset><br/>
+<input type="submit" value="Submit!">
+
+</form>
+
+</body>
+</html>
